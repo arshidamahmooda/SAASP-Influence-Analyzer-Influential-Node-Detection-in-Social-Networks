@@ -1,0 +1,19 @@
+% Requires \usepackage{booktabs} in preamble
+\begin{table}
+\caption{Performance Comparison of Centrality Methods (Facebook)}
+\label{tab:facebook_comparison}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & Kendall τ & Precision@K & F(t\_final) & Infected ratio & T\_saturation(95\%) & T\_peak\_infect \\
+\midrule
+KS & 0.6328 & 0.1000 & 2840.5300 & 0.7033 & 12 & 7 \\
+CI & 0.6311 & 0.0000 & 2904.8700 & 0.7192 & 8 & 2 \\
+DC & 0.6174 & 0.0000 & 2979.2700 & 0.7376 & 5 & 2 \\
+SAASP-fixed & 0.5753 & 0.0000 & 2954.8000 & 0.7316 & 5 & 2 \\
+SAASP-adaptive & 0.5753 & 0.0000 & 2954.8000 & 0.7316 & 5 & 2 \\
+BC & 0.5017 & 0.2000 & 3041.8000 & 0.7531 & 5 & 2 \\
+CC & 0.4089 & 0.1000 & 2849.5300 & 0.7055 & 9 & 3 \\
+PR & 0.4016 & 0.1000 & 3055.2700 & 0.7564 & 5 & 2 \\
+\bottomrule
+\end{tabular}
+\end{table}
